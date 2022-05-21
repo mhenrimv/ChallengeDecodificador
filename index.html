@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Decodificador</title>
+</head>
+<body>
+    <header>
+        <img src="logo.png" id="logo" alt="logo da alura com inicial da letra">
+        <h1>Criptografia Alura</h1>
+    </header>
+    <main class="main">
+        <section>
+                <textarea class="input-texto" cols="40" rows="6" placeholder="Digite seu texto:"></textarea>
+            <div>
+                <h6 class="informacao">&#10069;Apenas letras maiúsculas e minúsculas</h6>
+            </div>
+            <div class="botoes">
+                <button class="encriptar" onclick="btnEncriptar()">
+                    Criptografar
+                </button>
+                <button class="desencriptar" onclick="btnDesencriptar()">
+                    Descriptografar
+                </button>
+            </div>
+        </section>
+
+
+        <section>
+            <textarea class="mensagem" id="copya" cols="18" rows="8" placeholder="Nenhuma mensagem encontrada!"></textarea>
+            <button id="copiar"> Copiar </button>
+        
+        <script>
+            document.getElementById("copiar").addEventListener("click", function(){
+            document.getElementById("copya").select();
+            document.execCommand('copy');
+            })
+
+        </script>
+
+        </section>
+
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+<footer>
+    <div class="rodape">
+        <h8>Challenge Alura/Oracle - Desenvolvido por &copy;mhenrimv - Iniciante em programação</h8>
+    </div>
+
+</footer>
+</html>

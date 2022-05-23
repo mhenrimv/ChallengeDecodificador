@@ -39,7 +39,7 @@ body{
     position: relative;
     margin-top: 5px;
     margin-left: 90px;
-    background-image: url("boneco.png");
+    background-image: url("/img/boneco.png");
     background-repeat: no-repeat;
     box-shadow: 0px 5px 50px darkgray;
     border: none;
